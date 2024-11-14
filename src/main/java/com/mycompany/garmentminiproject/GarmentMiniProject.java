@@ -154,3 +154,24 @@ public class OopLabTask3 {
                 Garment garment = new Garment(id, name, description, size, color, price, stockQuantity);
                 inventory.addGarment(garment);
                 System.out.println("Garment added successfully.");
+                } else if (choice.equals("2")) {
+                System.out.println("\nInventory:");
+                inventory.showInventory();
+
+            } else if (choice.equals("3")) {
+                System.out.print("Enter Order ID: ");
+                String orderId = scanner.nextLine();
+                
+                Order order = new Order();
+                order.orderId = orderId;
+
+                System.out.print("Enter Garment ID to add to order: ");
+                String garmentId = scanner.nextLine();
+                Garment garment = inventory.findGarment(garmentId);
+
+                if (garment != null) {
+                    order.addGarment(garment);
+                    order.printOrderDetails();
+                } else {
+                    System.out.println("Garment not found.");
+                }
