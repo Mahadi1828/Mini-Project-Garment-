@@ -37,4 +37,8 @@ Garment(String id, String name, String description, String size, String color, d
     {
         this.stockQuantity = quantity;
     }
-
+double calculateDiscountPrice(double discountPercentage) 
+    {
+        return price - (price * discountPercentage / 100);
+    }
+}
