@@ -73,4 +73,10 @@ class Supplier {
         return suppliedFabric;
     }
 }
+class Order {
 
+    public String orderId;
+    public Date orderDate = new Date();
+    public List<Garment> garments = new ArrayList<>();
+    private double totalAmount;
+    
