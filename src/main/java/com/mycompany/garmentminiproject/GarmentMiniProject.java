@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+package mypackage;
 
-package com.mycompany.garmentminiproject;
-
-/**
- *
- * @author User
- */
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
 public class GarmentMiniProject {
 
     public static void main(String[] args) {
