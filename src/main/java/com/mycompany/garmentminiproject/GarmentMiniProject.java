@@ -64,3 +64,13 @@ class Supplier {
     public String name;
     public String contactInfo;
     List<Fabric> suppliedFabric = new ArrayList<>();
+
+    void addFabric(Fabric fabric) {
+        suppliedFabric.add(fabric);
+    }
+
+    List<Fabric> getSuppliedFabrics() {
+        return suppliedFabric;
+    }
+}
+
