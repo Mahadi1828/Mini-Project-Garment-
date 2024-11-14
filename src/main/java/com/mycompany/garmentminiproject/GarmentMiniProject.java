@@ -116,3 +116,9 @@ class Inventory {
         }
         return null;
     }
+    void showInventory() {
+        for (Garment g : garments) {
+            System.out.println("ID: " + g.id + " | Name: " + g.name + " | Price: $" + g.price);
+        }
+    }
+}
