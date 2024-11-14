@@ -25,5 +25,6 @@ Garment(String id, String name, String description, String size, String color, d
         this.price = price;
         this.stockQuantity = stockQuantity;
     }
+    Garment(String id, String name, double price) {
 
 
