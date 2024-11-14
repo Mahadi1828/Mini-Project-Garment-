@@ -175,3 +175,15 @@ public class OopLabTask3 {
                 } else {
                     System.out.println("Garment not found.");
                 }
+                } else if (choice.equals("4")) {
+                System.out.println("Exiting system. Goodbye!");
+                running = false;
+
+            } else {
+                System.out.println("Invalid option. Try again.");
+            }
+        }
+        scanner.close();
+    }
+}
+
