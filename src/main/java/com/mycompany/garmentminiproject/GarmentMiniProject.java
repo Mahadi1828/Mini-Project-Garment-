@@ -58,3 +58,9 @@ class Fabric {
         return pricePerMeter * meters;
     }
 }
+class Supplier {
+
+    public String id;
+    public String name;
+    public String contactInfo;
+    List<Fabric> suppliedFabric = new ArrayList<>();
