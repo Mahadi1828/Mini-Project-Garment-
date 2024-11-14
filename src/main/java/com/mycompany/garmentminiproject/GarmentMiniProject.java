@@ -128,3 +128,29 @@ public class OopLabTask3 {
         Scanner scanner = new Scanner(System.in);
         Inventory inventory = new Inventory();
         boolean running = true;
+
+        while (running) {
+            System.out.println("\n1. Add Garment | 2. View Inventory | 3. Place Order | 4. Exit");
+            System.out.print("Choose an option: ");
+            String choice = scanner.nextLine();
+
+            if (choice.equals("1")) {
+                System.out.print("Enter Garment ID: ");
+                String id = scanner.nextLine();
+                System.out.print("Enter Name: ");
+                String name = scanner.nextLine();
+                System.out.print("Enter Description: ");
+                String description = scanner.nextLine();
+                System.out.print("Enter Size: ");
+                String size = scanner.nextLine();
+                System.out.print("Enter Color: ");
+                String color = scanner.nextLine();
+                System.out.print("Enter Price: ");
+                double price = scanner.nextDouble();
+                System.out.print("Enter Stock Quantity: ");
+                int stockQuantity = scanner.nextInt();
+                scanner.nextLine();  
+
+                Garment garment = new Garment(id, name, description, size, color, price, stockQuantity);
+                inventory.addGarment(garment);
+                System.out.println("Garment added successfully.");
