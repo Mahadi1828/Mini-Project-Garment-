@@ -96,4 +96,11 @@ class Order {
         System.out.println("Total Amount: $" + calculateTotalAmount());
     }
 }
-    
+
+class Inventory {
+
+    List<Garment> garments = new ArrayList<>();
+
+    void addGarment(Garment garment) {
+        garments.add(garment);
+    }    
