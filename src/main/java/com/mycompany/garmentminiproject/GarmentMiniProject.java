@@ -88,4 +88,12 @@ class Order {
     double calculateTotalAmount() {
         return totalAmount;
     }
+    void printOrderDetails() {
+        System.out.println  ("\nOrder ID: " + orderId + " | Date: " + orderDate);
+        for (Garment g : garments) {
+            System.out.println("Name: " + g.name + " |  Price: $" + g.price + " |  Description: " + g.description);
+        }
+        System.out.println("Total Amount: $" + calculateTotalAmount());
+    }
+}
     
