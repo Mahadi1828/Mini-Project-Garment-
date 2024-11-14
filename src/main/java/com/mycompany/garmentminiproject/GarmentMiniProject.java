@@ -33,4 +33,8 @@ Garment(String id, String name, String description, String size, String color, d
         
         
     }
+    void updateStock(int quantity) 
+    {
+        this.stockQuantity = quantity;
+    }
 
