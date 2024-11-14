@@ -122,3 +122,9 @@ class Inventory {
         }
     }
 }
+public class OopLabTask3 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Inventory inventory = new Inventory();
+        boolean running = true;
