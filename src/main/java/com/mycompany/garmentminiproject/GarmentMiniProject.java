@@ -12,7 +12,9 @@ class Garment {
     public String name;
     public String description;
     public String size;
-
+public String color;
+    public double price;
+    public int stockQuantity;
 
 
 
